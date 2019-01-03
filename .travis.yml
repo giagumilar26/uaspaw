@@ -15,7 +15,7 @@ branches:
 
 # sebelum melakukan install
 before_install:
-   - cp .env.travis .env
+  - cp .env.travis .env
   - wget http://phar.phpunit.de/phpunit-6.5.phar
   - chmod +x phpunit-6.5.phar
   - mysql -e 'create database homestead_test;'
@@ -28,7 +28,6 @@ install:
 
 # sebelum scrip dijalankan
 before_script:
-  - ./phpunit --version
   
 #script eksekusi
 script:
