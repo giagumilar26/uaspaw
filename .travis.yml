@@ -28,10 +28,10 @@ install:
 
 # sebelum scrip dijalankan
 before_script:
+  - ./phpunit --version
   
 #script eksekusi
 script:
-- vendor/bin/phpunit
 # setelah eksekusi selesai
 after_success:
 
